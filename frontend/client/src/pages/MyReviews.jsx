@@ -1,8 +1,11 @@
 export default function MyReviews() {
   return (
-    <div>
+    <div style={{ padding: "20px" }}>
       <h1>My Reviews</h1>
-      <p>This page will show all the reviews I wrote.</p>
+
+      <div className="reviews-list" style={{ marginTop: "20px" }}>
+        <p>No reviews yet.</p>
+      </div>
     </div>
   );
 }
