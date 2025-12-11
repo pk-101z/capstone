@@ -1,6 +1,8 @@
 import { Routes, Route, Link } from "react-router-dom";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
+import RestaurantPage from "./pages/RestaurantPage.jsx";
+import RestaurantDetail from "./pages/RestaurantDetail.jsx";
 
 function App() {
   return (
@@ -14,9 +16,21 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<div>Home Page</div>} />
+        <Route
+          path="/"
+          element={
+            <div>
+              <div>Home Page</div>
+              <div style={{ marginTop: "1rem" }}>
+                <Link to="/restaurant">Go to Restaurant Page</Link>
+              </div>
+            </div>
+          }
+        />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/restaurant" element={<RestaurantPage />} />
+        <Route path="/restaurant/:id" element={<RestaurantDetail />} />
       </Routes>
     </div>
   );
