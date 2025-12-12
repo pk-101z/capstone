@@ -14,9 +14,11 @@ app.use('/api/reviews', reviewRoutes);
 
 
 const restaurants = [
-  { id: 1, name: "Pho 24", location: "Downtown", avgRating: 4.5 },
-  { id: 2, name: "Taco Loco", location: "East Side", avgRating: 3.8 },
-  { id: 3, name: "Bella Pasta", location: "Uptown", avgRating: 4.2 },
+  { id: 1, name: "Chick-fil-A", location: "Downtown" },
+  { id: 2, name: "Popeyes", location: "East Side" },
+  { id: 3, name: "Zaxby's", location: "Uptown" },
+  { id: 4, name: "Church's Chicken", location: "Midtown" },
+  { id: 5, name: "Raising Cane's", location: "Campus" },
 ];
 
 
